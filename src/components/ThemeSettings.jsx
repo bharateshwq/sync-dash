@@ -19,6 +19,7 @@ const ThemeSettings = () => {
             onClick={() => setThemeSettings(false)}
             style={{ color: 'rgb(153, 171, 180)', borderRadius: '50%' }}
             className="text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray"
+            aria-label="Close Theme Settings"
           >
             <MdOutlineCancel />
           </button>
@@ -66,6 +67,7 @@ const ThemeSettings = () => {
                 <div
                   className="relative mt-2 cursor-pointer flex gap-5 items-center"
                   key={item.name}
+                  aria-label="Close Theme Settings"
                 >
                   <button
                     type="button"
